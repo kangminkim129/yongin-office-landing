@@ -7,83 +7,56 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
-
+<body class="bg-gray-50 text-gray-900 pb-20 md:pb-0">
 
   <!-- HERO -->
-  <section class="relative overflow-hidden bg-slate-950 text-white">
+  <section class="relative min-h-screen overflow-hidden bg-slate-950 text-white flex items-center">
     <div class="absolute inset-0">
       <img src="assets/main-view.png" alt="용인 반도체 클러스터 조감도" class="w-full h-full object-cover opacity-45">
-      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-900/30"></div>
+      <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-slate-950 via-slate-950/85 to-slate-900/30"></div>
     </div>
 
-    <div class="relative max-w-7xl mx-auto px-5 py-16 md:py-28 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <p class="text-yellow-400 font-bold mb-4">용인 원삼 SK하이닉스 반도체 클러스터</p>
+    <div class="relative max-w-7xl mx-auto px-5 py-20">
+      <p class="text-yellow-400 font-bold mb-4">용인 원삼 SK하이닉스 반도체 클러스터</p>
 
-        <h1 class="text-4xl md:text-6xl font-black leading-tight mb-6">
-          SK하이닉스<br>
-          <span class="text-yellow-400">정문 바로 앞</span><br>
-          프리미엄 오피스텔
-        </h1>
+      <h1 class="text-4xl md:text-7xl font-black leading-tight mb-6">
+        SK하이닉스<br>
+        <span class="text-yellow-400">정문 바로 앞</span><br>
+        프리미엄 오피스텔
+      </h1>
 
-        <p class="text-lg md:text-xl text-gray-200 mb-8">
-          122조 투자, FAB 준공, 협력사 입주, 공사인력 증가.<br class="hidden md:block">
-          사람이 몰리는 곳의 주거 수요를 선점하세요.
-        </p>
+      <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl">
+        122조 투자, FAB 준공, 협력사 입주, 공사인력 증가.
+        사람이 몰리는 곳의 주거 수요를 선점하세요.
+      </p>
 
-        <div class="grid grid-cols-3 gap-3 mb-8">
-          <div class="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
-            <strong class="block text-xl text-yellow-400">122조</strong>
-            <span class="text-sm">SK 투자</span>
-          </div>
-          <div class="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
-            <strong class="block text-xl text-yellow-400">정문 앞</strong>
-            <span class="text-sm">직주근접</span>
-          </div>
-          <div class="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
-            <strong class="block text-xl text-yellow-400">희소</strong>
-            <span class="text-sm">상업용지</span>
-          </div>
+      <div class="grid grid-cols-3 gap-3 mb-10 max-w-xl">
+        <div class="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+          <strong class="block text-xl text-yellow-400">122조</strong>
+          <span class="text-sm">SK 투자</span>
         </div>
-
-        <a href="#lead" class="inline-block bg-yellow-400 text-slate-950 px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:bg-yellow-300">
-          무료 상담 신청하기
-        </a>
+        <div class="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+          <strong class="block text-xl text-yellow-400">정문 앞</strong>
+          <span class="text-sm">직주근접</span>
+        </div>
+        <div class="bg-white/10 border border-white/20 rounded-xl p-4 text-center">
+          <strong class="block text-xl text-yellow-400">희소</strong>
+          <span class="text-sm">상업용지</span>
+        </div>
       </div>
 
-      <!-- FORM -->
-      <div id="lead" class="bg-white text-gray-900 rounded-2xl p-6 md:p-8 shadow-2xl">
-        <h2 class="text-2xl font-black mb-2">지금 상담받고</h2>
-        <p class="text-blue-700 font-bold mb-6">분양자료 먼저 받아보세요</p>
-
-        <form class="space-y-4">
-          <input type="text" placeholder="이름" class="w-full p-4 rounded-xl border border-gray-300">
-          <input type="tel" placeholder="연락처" class="w-full p-4 rounded-xl border border-gray-300">
-          <select class="w-full p-4 rounded-xl border border-gray-300 text-gray-500">
-            <option>상담 희망 시간 선택</option>
-            <option>오전</option>
-            <option>오후</option>
-            <option>저녁</option>
-          </select>
-          <button type="submit" class="w-full bg-blue-700 text-white py-4 rounded-xl font-black hover:bg-blue-800">
-            무료 상담 신청하기
-          </button>
-        </form>
-
-        <a href="#" class="mt-3 block w-full text-center border border-gray-300 py-4 rounded-xl font-bold">
-          카카오톡 상담하기
-        </a>
-      </div>
+      <a href="#why" class="inline-block bg-yellow-400 text-slate-950 px-8 py-4 rounded-xl font-black text-lg shadow-xl hover:bg-yellow-300">
+        왜 주목받는지 보기
+      </a>
     </div>
   </section>
 
-  <!-- REASON -->
-  <section class="py-16 px-5 max-w-7xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-black text-center mb-4">
-      2027년부터 사람들이 몰려옵니다
+  <!-- WHY -->
+  <section id="why" class="py-20 px-5 max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-5xl font-black text-center mb-4">
+      2027년부터<br class="md:hidden"> 사람들이 몰려옵니다
     </h2>
-    <p class="text-center text-gray-600 mb-10">
+    <p class="text-center text-gray-600 mb-12">
       핵심은 단순 개발호재가 아니라, 실제 근무·공사·협력사 수요입니다.
     </p>
 
@@ -111,11 +84,26 @@
     </div>
   </section>
 
+  <!-- STORY -->
+  <section class="py-20 px-5 bg-slate-950 text-white text-center">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-yellow-400 font-bold mb-4">POINT</p>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight mb-6">
+        사람이 몰리는 곳에는<br>
+        주거가 먼저 부족해집니다.
+      </h2>
+      <p class="text-gray-300 text-lg">
+        공사 인력, 협력사, 상주 직원, 방문 수요까지.
+        이 프로젝트의 핵심은 “미래 수요”가 아니라 이미 시작된 “실수요”입니다.
+      </p>
+    </div>
+  </section>
+
   <!-- LOCATION -->
-  <section class="py-16 px-5 bg-white">
+  <section class="py-20 px-5 bg-white">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="text-3xl md:text-4xl font-black mb-6">
+        <h2 class="text-3xl md:text-5xl font-black mb-6">
           왜 이 위치인가?<br>
           <span class="text-blue-700">정문 앞 항아리 상권</span>
         </h2>
@@ -129,7 +117,7 @@
         </ul>
       </div>
 
-      <div class="bg-gray-100 rounded-2xl p-6 text-center">
+      <div class="bg-gray-100 rounded-2xl p-4 md:p-6 text-center">
         <img src="assets/main-view.png" alt="사업지 위치 이미지" class="rounded-xl shadow-lg">
         <p class="text-sm text-gray-500 mt-3">※ 이미지는 이해를 돕기 위한 자료입니다.</p>
       </div>
@@ -137,8 +125,8 @@
   </section>
 
   <!-- POINT -->
-  <section class="py-16 px-5 max-w-7xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-black text-center mb-10">
+  <section class="py-20 px-5 max-w-7xl mx-auto">
+    <h2 class="text-3xl md:text-5xl font-black text-center mb-12">
       투자 포인트 한눈에 보기
     </h2>
 
@@ -166,15 +154,72 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="py-16 px-5 bg-slate-950 text-white text-center">
-    <h2 class="text-3xl md:text-4xl font-black mb-4">
-      미래가 확실한 곳,<br class="md:hidden"> 지금 상담받고 선점하세요
-    </h2>
-    <p class="text-gray-300 mb-8">한정된 오피스텔, 선착순 상담 진행</p>
-    <a href="#lead" class="inline-block bg-yellow-400 text-slate-950 px-10 py-5 rounded-xl font-black text-xl">
-      무료 상담 신청하기
-    </a>
+  <!-- FINAL CTA + FORM -->
+  <section id="lead" class="py-20 px-5 bg-slate-950 text-white">
+    <div class="max-w-xl mx-auto">
+      <div class="text-center mb-8">
+        <p class="text-yellow-400 font-bold mb-3">CONTACT</p>
+        <h2 class="text-3xl md:text-5xl font-black mb-4">
+          상담 예약하기
+        </h2>
+        <p class="text-gray-300">
+          30초만 투자하세요.<br>
+          전문 상담사가 직접 연락드립니다.
+        </p>
+      </div>
+
+      <form id="leadForm" class="bg-white text-gray-900 rounded-2xl p-6 md:p-8 shadow-2xl space-y-5">
+        <div>
+          <label for="name" class="block font-bold mb-2">이름</label>
+          <input id="name" type="text" placeholder="이름을 입력해주세요" class="w-full p-4 rounded-xl border border-gray-300" required>
+        </div>
+
+        <div>
+          <label for="phone" class="block font-bold mb-2">연락처</label>
+          <input id="phone" type="tel" placeholder="010-0000-0000" class="w-full p-4 rounded-xl border border-gray-300" required>
+        </div>
+
+        <div>
+          <label for="time" class="block font-bold mb-2">상담 희망 시간 <span class="text-gray-400 text-sm">(선택)</span></label>
+          <select id="time" class="w-full p-4 rounded-xl border border-gray-300 text-gray-500">
+            <option value="">상담 희망 시간 선택</option>
+            <option>오전</option>
+            <option>오후</option>
+            <option>저녁</option>
+            <option>언제든 가능</option>
+          </select>
+        </div>
+
+        <div class="border rounded-xl p-4 bg-gray-50">
+          <label class="flex items-start gap-3 text-sm">
+            <input id="privacy" type="checkbox" class="mt-1">
+            <span>
+              <strong>개인정보 수집 및 이용에 동의합니다.</strong>
+              <span class="text-red-500">(필수)</span>
+            </span>
+          </label>
+
+          <button type="button" id="togglePrivacy" class="text-blue-700 text-sm font-bold mt-3">
+            내용보기 ▼
+          </button>
+
+          <div id="privacyContent" class="hidden mt-3 text-sm text-gray-600 leading-7 border-t pt-3">
+            <p>1. 수집/이용 목적: 상담 예약, 문의 응대, 분양 관련 안내</p>
+            <p>2. 수집 항목: 이름, 연락처, 상담 희망 시간</p>
+            <p>3. 보유/이용 기간: 고객 요청 처리 후 3개월</p>
+            <p>4. 동의를 거부할 수 있으나, 거부 시 상담 신청이 제한될 수 있습니다.</p>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full bg-blue-700 text-white py-4 rounded-xl font-black text-lg hover:bg-blue-800">
+          상담 예약하기
+        </button>
+
+        <p class="text-xs text-gray-500 text-center">
+          입력하신 정보는 상담 목적 외로 사용되지 않습니다.
+        </p>
+      </form>
+    </div>
   </section>
 
   <!-- MOBILE STICKY CTA -->
@@ -182,10 +227,39 @@
     <a href="tel:1666-1234" class="bg-slate-900 text-white text-center py-3 rounded-lg font-bold">
       전화 상담
     </a>
-    <a href="#lead" class="bg-yellow-400 text-slate-950 text-center py-3 rounded-lg font-bold">
-      상담 신청
+    <a href="#" class="bg-yellow-400 text-slate-950 text-center py-3 rounded-lg font-bold">
+      카카오 상담
     </a>
   </div>
+
+  <script>
+    const togglePrivacy = document.getElementById("togglePrivacy");
+    const privacyContent = document.getElementById("privacyContent");
+    const leadForm = document.getElementById("leadForm");
+
+    togglePrivacy.addEventListener("click", function () {
+      privacyContent.classList.toggle("hidden");
+      togglePrivacy.textContent = privacyContent.classList.contains("hidden")
+        ? "내용보기 ▼"
+        : "내용닫기 ▲";
+    });
+
+    leadForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const privacyChecked = document.getElementById("privacy").checked;
+
+      if (!privacyChecked) {
+        alert("개인정보 수집 및 이용에 동의해주세요.");
+        return;
+      }
+
+      alert("상담 예약이 접수되었습니다. 곧 연락드리겠습니다.");
+      leadForm.reset();
+      privacyContent.classList.add("hidden");
+      togglePrivacy.textContent = "내용보기 ▼";
+    });
+  </script>
 
 </body>
 </html>
